@@ -1,0 +1,1 @@
+Web player: video stream with analytics events
