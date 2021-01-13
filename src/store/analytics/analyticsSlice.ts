@@ -71,6 +71,9 @@ export const activeEventsSelector: Selector<ApplicationState, AnalyticEvent[]> =
 export const eventSelectedSelector: Selector<ApplicationState, AnalyticEvent | null> =
     (state: ApplicationState) => state.analytics.selectedEvent;
 
+export const eventsFetchFail: Selector<ApplicationState, string | null> =
+    (state: ApplicationState) => state.analytics.fetchEventsFailedMessage;
+
 const {actions, reducer} = slice;
 export const {
     allEventsFetchSuccess,
